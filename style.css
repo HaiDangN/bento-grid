@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+.bento-grid {
+    display: grid;
+    height: 80rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 2rem;
+    padding: 5rem 10rem;
+}
+.bento-item {
+}
+.type-create {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+}
+.type-ai {
+    grid-column: 1 / 2;
+    grid-row: 6 / 11;
+}
+.type-featured {
+    grid-column: 2 / 4;
+    grid-row: 1 / 5;
+}
+.type-social {
+    grid-column: 2 / 3;
+    grid-row: 5 / 8;
+}
+.type-percentage {
+    grid-column: 2 / 3;
+    grid-row: 8 / 11;
+}
+.type-schedule {
+    grid-column: 3 / 4;
+    grid-row: 5 / 8;
+}
+.type-optimize {
+    grid-column: 4 / 5;
+    grid-row: 1 / 8;
+}
+.type-followers {
+    grid-column: 3 / 5;
+    grid-row: 8 / 11;
+}
