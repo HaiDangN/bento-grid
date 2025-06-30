@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,46 +7,102 @@
 }
 body {
     min-height: 100vh;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+h1 {
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: -.09rem;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: -.1rem;
+}
+p {
+    line-height: 1.2rem;
 }
 .bento-grid {
     display: grid;
-    height: 80rem;
+    height: 70rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(11, 1fr);
     gap: 2rem;
     padding: 5rem 10rem;
 }
 .bento-item {
-}
-.type-create {
-    grid-column: 1 / 2;
-    grid-row: 1 / 6;
-}
-.type-ai {
-    grid-column: 1 / 2;
-    grid-row: 6 / 11;
+    border: 1px red solid;
+    padding: 1.5rem;
 }
 .type-featured {
     grid-column: 2 / 4;
     grid-row: 1 / 5;
+    padding: 4rem;
+
+    background-color: hsl(256, 67%, 59%);
+    text-align: center;
+    color: white;
+    line-height: 3.5rem;
+}
+.type-create {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    
+    background-color: hsl(31, 66%, 93%);
+}
+.type-ai {
+    grid-column: 1 / 2;
+    grid-row: 6 / 11;
+    
+    background-color: hsl(39, 100%, 71%);
 }
 .type-social {
     grid-column: 2 / 3;
     grid-row: 5 / 8;
+    
+    background-color: hsl(0, 0%, 100%);
 }
 .type-percentage {
     grid-column: 2 / 3;
     grid-row: 8 / 11;
+    
+    background-color: hsl(0, 0%, 100%);
 }
 .type-schedule {
     grid-column: 3 / 4;
     grid-row: 5 / 8;
+    
+    background-color: hsl(39, 100%, 71%);
 }
 .type-optimize {
     grid-column: 4 / 5;
     grid-row: 1 / 8;
+    
+    background-color: hsl(254, 88%, 90%);
 }
 .type-followers {
     grid-column: 3 / 5;
     grid-row: 8 / 11;
+    
+    background-color: hsl(256, 67%, 59%);
+    color: white;
+}
+.text-yellow {
+    color: hsl(39, 100%, 71%);
+}
+.text-purple {
+    color: hsl(256, 67%, 59%);
+}
+.text-percentage {
+    font-size: 3.6rem;
+    font-weight: 500;
 }
